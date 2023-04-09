@@ -1,12 +1,171 @@
 <!DOCTYPE html>
-<html>
+<html lang="fr">
   <head>
     <title>My First Web Page</title>
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" type="text/css" href="styles.css" />
+    <link rel="icon" type="image/x-icon" href="./assets/images/favicon.ico" />
   </head>
+
   <body>
-    <h1>My First Web Page</h1>
-    <p>My first paragraph.</p>
+    <div id="headerBar">
+      <div id="logo">
+        <img src="./assets/images/logo.png" alt="logo" id="imagelogo" />
+      </div>
+      <div id="title">YI SOCIAL MEDIA</div>
+    </div>
+
+    <div id="frstView">
+      <div id="annuaire">
+        <div class="annuaireDivs">
+          <a target="self" href="#sw">
+            <p class="annuaireItems">Sites web</p>
+          </a>
+        </div>
+        <hr />
+        <div class="annuaireDivs">
+          <a target="self" href="#apps">
+            <p class="annuaireItems">Applications</p>
+          </a>
+        </div>
+        <hr />
+        <div class="annuaireDivs">
+          <a target="self" href="#docs">
+            <p class="annuaireItems">Documents</p>
+          </a>
+        </div>
+        <hr />
+        <div class="annuaireDivs">
+          <a target="self" href="mailto:yaseralnezami@gmail.com">
+            <p class="annuaireItems">Nous contacter</p>
+          </a>
+        </div>
+      </div>
+      <div>
+        <div class="sectionTitle">
+          <p>Sites Web</p>
+        </div>
+        <div class="flex flex-wrap flex-row">
+          <div
+            title="FaceBook"
+            class="appItems"
+            data-tooltip="Facebook is a social utility that connects you with the people around you. "
+          >
+            <a href="https://www.FaceBook.com/" target="_blank">
+              <img
+                src="./assets/images/fbLogo.png"
+                alt="FaceBook logo image"
+                style="width: 100px; height: 100px"
+              />
+              <h3>Facebook</h3>
+            </a>
+          </div>
+          <div
+            title="Instagram"
+            class="appItems"
+            data-tooltip="Instagram is a photo and video sharing social networking service owned by American company Meta Platforms."
+          >
+            <a href="https://www.instagram.com/" target="_blank">
+              <img
+                src="./assets/images/instaLogo.jpg"
+                alt="instagram logo image"
+                style="width: 100px; height: 100px"
+              />
+              <h3>Instagram</h3>
+            </a>
+          </div>
+          <div
+            title="Twitter"
+            class="appItems"
+            data-tooltip="Twitter is an online social media and social networking service owned and operated by American company Twitter"
+          >
+            <a href="https://twitter.com" target="_blank">
+              <img
+                src="./assets/images/twitterLogo.png"
+                alt="twitter logo image"
+                style="width: 100px; height: 100px"
+              />
+              <h3>Twitter</h3>
+            </a>
+          </div>
+          <div
+            title="Tiktok"
+            class="appItems"
+            data-tooltip="TikTok, and its Chinese counterpart Douyin is a short-form video hosting service owned by the Chinese company ByteDance."
+          >
+            <a href="https://www.tiktok.com" target="_blank">
+              <img
+                src="./assets/images/tiktokLogo.png"
+                alt="tiktok logo image"
+                style="width: 100px; height: 100px"
+              />
+              <h3>Tiktok</h3>
+            </a>
+          </div>
+          <div
+            title="Messenger"
+            class="appItems"
+            data-tooltip="Messenger is used to send messages and exchange photos, videos, stickers, audio, and files."
+          >
+            <a href="https://www.messenger.com" target="_blank">
+              <img
+                src="./assets/images/messengerLogo.jpg"
+                alt="messenger logo image"
+                style="width: 100px; height: 100px"
+              />
+              <h3>Messenger</h3>
+            </a>
+          </div>
+
+          <div
+            title="Telegram"
+            class="appItems"
+            data-tooltip="Telegram Messenger is a freemium, cross-platform, encrypted, cloud-based and centralized instant messaging service."
+          >
+            <a href="https://web.telegram.org/" target="_blank">
+              <img
+                src="./assets/images/telegramLogo.png"
+                alt="Telegram logo image"
+                style="width: 100px; height: 100px"
+              />
+              <h3>Telegram</h3>
+            </a>
+          </div>
+          <div
+            title="WhatsApp"
+            class="appItems"
+            data-tooltip="WhatsApp is an internationally available freeware, cross-platform, centralized instant messaging"
+          >
+            <a href="https://www.whatsapp.com" target="_blank">
+              <img
+                src="./assets/images/waLogo.jpg"
+                alt="WhatsApp logo image"
+                style="width: 100px; height: 100px"
+              />
+              <h3>WhatsApp</h3>
+            </a>
+          </div>
+          <div
+            title="Viber"
+            class="appItems"
+            data-tooltip="Viber is an application for iOS, Windows Phone and Android OS. It lets users make free phone calls and send free text messages "
+          >
+            <a href="https://www.viber.com" target="_blank">
+              <img
+                src="./assets/images/viberLogo.jpg"
+                alt="viberLogo logo image"
+                style="width: 100px; height: 100px"
+              />
+              <h3>Viber</h3>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="appSection">
+      <p class="sectionTitle">Applications</p>
+    </div>
+
     <script src="script.js"></script>
   </body>
 </html>
