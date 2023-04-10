@@ -3,113 +3,130 @@
     padding: 0;
     box-sizing: border-box;
 }
-body{
-    background-color: black;
+
+body {
+    background-color: #41403f;
+    height: 100%;
 }
-#headerBar{
+
+#headerBar {
     display: flex;
     flex-direction: row;
-    background-color:rgba(245, 116, 57, 0.5);
+    background-color: rgb(6, 5, 5);
     width: 100%;
 
 
 }
-#imagelogo{
+
+#imagelogo {
     text-align: left;
     margin-top: 0%;
     margin-bottom: 0%;
     width: 100px;
 }
-#title{
-    background-color: rgba(120, 104, 95, 0.5);
+
+#title {
+    background-color: white;
     flex: 1;
     text-align: center;
+    font-style: oblique;
     padding: 20px;
     margin: 20px;
     border-radius: 20px;
     font-size: x-large;
- 
+
 }
-#annuaire{
+
+#annuaire {
     background-color: white;
     width: 20%;
     height: 470px;
     text-align: center;
 }
-.annuaireDivs{
-    background-color:rgba(0, 0, 250, 0.4);
+
+.annuaireDivs {
+    background-color: white;
     color: white;
     height: 25%;
-    padding-top: 25px;
+    padding: 20px;
 }
-.annuaireItems{
-    background-color: rgb(105, 105, 116);
+
+.annuaireItems {
+    height: 4em;
+    padding: 1em;
+    background-color: black;
     border-radius: 20px;
 
 }
-#frstView{
-width: 100%;
-background-color: rgb(38, 27, 27);
-display: flex;
-flex-direction: row;
-padding-bottom: 0%;
+
+#frstView {
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    display: flex;
+    flex-direction: row;
+    padding-bottom: 0%;
 
 }
-a{
+
+a {
     color: blanchedalmond;
     text-decoration: none;
 }
 
-h3{
+h3 {
     color: azure;
-     text-align: center
+    text-align: center
 }
-.sectionTitle{
+
+.sectionTitle {
     text-align: center;
     font-size: large;
     width: 100%;
-    color: blueviolet;
-    background-color: rgba(13, 13, 220, 0.1);
+    color: black;
+    background-color: white;
 }
-.flex{
+
+.flex {
     display: flex;
-} 
-.flex-wrap{
+}
+
+.flex-wrap {
     flex-wrap: wrap;
 }
-.flex-row{
+
+.flex-row {
     flex-direction: row;
 }
-.appItems{
+
+.appItems {
     margin: 20px;
-    margin-bottom: 110px;
+    margin-bottom: 10px;
     padding: 10px;
     background-color: rgba(247, 254, 255, 0.1);
     border-radius: 20px;
     display: inline-block;
     position: relative;
 }
-#appSection{
+
+#appSection {
     width: 100%;
     background-color: rgba(247, 254, 255, 0.1);
 }
 
 
-.appItems:hover::before{
-    position:absolute;
+.appItems:hover::before {
+    z-index: 3;
+    position: absolute;
     content: attr(data-tooltip);
     width: max-content;
     max-width: 120px;
     transition: 500ms;
-    top: 60px;
+    top: 100px;
     left: -13px;
     background: #0c0909;
     color: rgb(7, 241, 241);
     border-radius: 20px;
     padding: 1em;
-    
+
 }
-
-
-
-
