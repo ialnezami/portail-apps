@@ -129,7 +129,7 @@ img{
 .appItems::after{
     position: absolute;
     --sc:0;
-    top:100px;
+    top:118px;
     left:-30px ;
     transform: scale(var(--sc));
     transition: 150ms transform;
@@ -145,6 +145,16 @@ img{
     background-color: var(--cf);
     z-index: 3;
 }
-.appItems:hover::before{
+.appItems::after{
+    content:" ";
+    border: 12px solid transparent;
+    border-bottom-color: var(--cf);
+    transition: 150ms transform;
+    transform-origin: bottom center;
+    top:95px;
+    left: 45px;
+}
+.appItems:hover::before,
+.appItems:hover::after{
     --sc:1;
 }
