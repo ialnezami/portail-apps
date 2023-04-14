@@ -1,12 +1,13 @@
 * {
     --cf:#41403f;
+    --cp:white;
+    --csh:rgba(247, 254, 255, 0.1);
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
 body {
-    --cf:var(--cf);
     background-color: black;
     height: 100%;
 }
@@ -21,16 +22,18 @@ body {
 }
 
 #imagelogo {
-    text-align: left;
+    position: absolute;
+    top: 10px;
+    left: 10px;
     margin-top: 0%;
     margin-bottom: 0%;
     width: 100px;
+    border-radius: 20px;
 }
 
 #title {
-    background-color: white;
+    background-color: var(--cp);
     color: var(--cf);
-    flex: 1;
     text-align: center;
     font-style: oblique;
     padding: 20px;
@@ -39,9 +42,16 @@ body {
     font-size: x-large;
 
 }
+#contourTitle{
+    border: 5px solid var(--csh);
+    border-radius: 20px;
+    width: 85%;
+    margin: 10px 50px 10px 170px;
+    padding: 0px 0px 0px 0px;
+}
 
 #annuaire {
-    background-color: white;
+    background-color: var(--cp);
     width: 20%;
     height: 470px;
     text-align: center;
@@ -49,8 +59,8 @@ body {
 }
 
 .annuaireDivs {
-    background-color: white;
-    color: white;
+    background-color: var(--cp);
+    color: var(--cp);
     height: 25%;
     padding: 20px;
 }
@@ -61,6 +71,7 @@ body {
     padding: 1em;
     background-color: var(--cf);
     border-radius: 20px;
+    border:5px solid var(--csh);
 
 }
 
@@ -76,21 +87,37 @@ body {
 }
 
 a {
-    color: blanchedalmond;
+    color: var(--cp);
     text-decoration: none;
 }
 
 h3 {
-    color: azure;
+    color: var(--cp);
     text-align: center
+}
+.TitleChapOne{
+    text-align: center;
+    font-size: large;
+    color: var(--cp);
+    background-color: var(--cf);
+    border: 5px solid var(--csh);
+    padding: 2px;
+    border-radius: 20px;
+    margin-right: 30%;
+    margin-left: 5%;
 }
 
 .sectionTitle {
     text-align: center;
     font-size: large;
-    width: 100%;
-    color: black;
-    background-color: white;
+    width: 50%;
+    margin-left: 25%;
+    margin-bottom: 1em;
+    color: var(--cp);
+    background-color: var(--cf);
+    border: 5px solid var(--csh);
+    padding: 2px;
+    border-radius: 20px;
 }
 
 .flex {
@@ -109,20 +136,17 @@ h3 {
     margin: 20px;
     margin-bottom: 10px;
     padding: 10px;
-    background-color: rgba(247, 254, 255, 0.1);
-    color: antiquewhite;
+    background-color: var(--csh);
+    color: var(--cp);
     border-radius: 20px;
     display: inline-block;
     position: relative;
 }
-img{
-    border-radius: 24px;
-}
+
 
 #appSection {
     width: 100%;
     background-color: var(--cf);
-    border-radius: 10px;
 }
 
 .appItems::before,
@@ -139,7 +163,7 @@ img{
     content:attr(data-tooltip);
     width: max-content;
     max-width: 150px;
-    border: 1px solid white;
+    border: 1px solid transparent;
     border-radius: 20px;
     padding: 1em;
     background-color: var(--cf);
@@ -157,4 +181,11 @@ img{
 .appItems:hover::before,
 .appItems:hover::after{
     --sc:1;
+}
+#fenetre{
+    width:100px;
+    height:100px;
+    background-color: red;
+    display: block;
+    
 }
