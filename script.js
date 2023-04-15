@@ -1,3 +1,3 @@
 function fenetre() {
-  document.getElementsById("fenetre").innerHtml = "c=" + c;
+  document.getElementById("fenetre").style.display = "none";
 }
