@@ -171,11 +171,12 @@ h3 {
     flex-direction: row;
 }
 
-#SitesWebSection{
+.chapterBody{
 background-color: var(--cf);
 margin-top: 50px;
 margin-bottom: 50px;
 }
+
 
 .appItems {
     margin: 20px;
