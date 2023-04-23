@@ -265,12 +265,7 @@ margin-bottom: 50px;
 .appItems:hover::after{
     --sc:1;
 }
-#idf{
-    width:100px;
-    height:100px;
-    background-color: red;
-    display: none;
-}
+
 
 
 
@@ -292,7 +287,6 @@ margin-bottom: 50px;
     padding-left: 12%;
     padding-bottom: 5%;
     background-color:var(--csh);
-    border-right: 1px solid black;
 }
 #contacter{
     display: flex;
@@ -319,4 +313,8 @@ margin-bottom: 50px;
     text-align: center;
     padding-top: 1em;
     border-radius: 20px;
+}
+#jsTuto{
+    background-color: red;
+    height: 200px;
 }
