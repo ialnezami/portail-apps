@@ -9,7 +9,7 @@ function CacherAnnaire() {
   document.getElementById("annuaire").style.visibility = "hidden";
 }
 function onOF() {
-  if (document.getElementById("bt").o == "false") {
+  if (document.getElementById("bt").on == "false") {
     CacherAnnaire();
   } else {
     AfficherAnnaire();
