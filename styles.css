@@ -97,20 +97,14 @@ h3 {
     z-index: 999;
 
 }
-#afficher{
+#bt{
     width: max-content;
     height: max-content;
     background-color: var(--csh);
     color: var(--cp);
     padding: 0.5em;
 }
-#cacher{
-    width: max-content;
-    height: max-content;
-    background-color: var(--cf);
-    color: var(--cp);
-    display: none;
-}
+
 
 .annuaireDivs {
     background-color: var(--cp);
