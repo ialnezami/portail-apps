@@ -8,3 +8,7 @@ function CacherAnnaire() {
   document.getElementById("afficher").style.display = "block";
   document.getElementById("cacher").style.display = "none";
 }
+
+myBody.addEventListener("click", function () {
+  CacherAnnaire();
+});

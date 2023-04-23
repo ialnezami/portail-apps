@@ -13,7 +13,7 @@ body {
 button{
     margin: 10px;
     padding: 0.5em;
-    background-color: aqua;
+    background-color: var(--cf);
     border-radius: 20px;
 }
 textarea{
@@ -25,7 +25,7 @@ a {
     text-decoration: none;
 }
 li>a{
-    color: var(--cf);
+    color: var(--cp);
 }
 
 h3 {
@@ -87,6 +87,8 @@ h3 {
     border-radius: 15px;
     visibility: hidden;
     margin-left: 20px;
+    border-radius: 20px;
+    padding: 0.5em;
 }
 #butAndAnnuaireColomn{
     display: flex;
@@ -124,6 +126,26 @@ h3 {
    
 
 }
+#SWBackPhoto{
+    background-image: url('./assets/images/SWBackPhoto.jpeg');
+    background-size: cover;
+}
+#appBackPhoto{
+    background-image: url('./assets/images/appBackPhoto.jpeg');
+    background-size: cover;
+
+}
+#docsBackPhoto{
+    background-image: url('./assets/images/docsBackPhoto.png');
+    background-size: cover;
+
+}
+#contactBackPhoto{
+    background-image: url('./assets/images/contactBackPhoto.jpeg');
+    background-size: cover;
+
+}
+
  
 
 
@@ -132,11 +154,21 @@ h3 {
 .annuaireItems {
     padding: 1em;
     background-color: var(--cf);
+    color: var(--cp);
     border-radius: 20px;
     border:5px solid var(--csh);
     width: 130px;
     height: max-content;
 
+}
+.titreItemsAnnuaire{
+    background-color: var(--cf);
+    opacity: 90%;
+    border-radius: 20px;
+    width: max-content;
+    max-width: 120%;
+    min-width: 120%;
+    padding: 0.7em;
 }
 
 
@@ -245,34 +277,46 @@ margin-bottom: 50px;
 #footerBar{
     display: flex;
     flex-direction: row;
-    width: 100%;
-    height: 100px;
-    background-color: var(--cf);
-    color: var(--cp);
-    text-align: center;
-    border-left: 2px solid var(--csh);
-    margin-bottom: 0px;
-
-
+    height: 270px;
+   background-image: url('./assets/images/panda\ logo.jpg');
+    background-size: contain;
 }
 
 #listSites{
     list-style: none;
 }
-
-#contacter{
+#contacterContainer{
     width: 50%;
-    background-color: var(--cp);
-    color: var(--cf);
+    text-align: center;
+    padding-top: 30px;
+    padding-left: 12%;
+    padding-bottom: 5%;
+    background-color:var(--csh);
+    border-right: 1px solid black;
+}
+#contacter{
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    background-color: var(--cf);
+    color: var(--cp);
     text-align: center;
     padding-top: 1em;
-}
+    border-radius: 20px;
 
+}
+#refContainer{
+    width: 50%;
+    text-align: center;
+    padding-top: 30px;
+    padding-left: 12%;
+    background-color:var(--csh);
+}
 #ref{
     width: 50%;
-    background-color: var(--cp);
-    color: var(--cf);
+    background-color: var(--cf);
+    color: var(--cp);
     text-align: center;
     padding-top: 1em;
-    margin-bottom: 0%;
+    border-radius: 20px;
 }
